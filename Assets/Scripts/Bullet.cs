@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     Vector3 direction;
-    float speed = 3.5f;
+    float speed = 5.0f;
     void Start()
     {
         shootDirection();
