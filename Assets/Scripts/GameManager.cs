@@ -8,10 +8,20 @@ public class GameManager : MonoBehaviour
     
     int points = 0;
 
+    void Start()
+    {
+        score.text = PlayerPrefs.GetInt("Score", 0).ToString();    
+    }
     public void AddPoint()
     {
+        PlayerPrefs.SetInt("Score", points);
+        print(points);
         points++;
         score.text = points.ToString();
+    }
+    public void ResetPoints()
+    {
+        PlayerPrefs.DeleteKey("Score");
     }
     public void GameOver()
     {  
