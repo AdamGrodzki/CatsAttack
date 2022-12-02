@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] Text score;
-    
     int points = 0;
 
     void Start()

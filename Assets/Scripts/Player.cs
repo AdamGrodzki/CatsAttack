@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class Player : MonoBehaviour
 {
     private void Update()
@@ -8,9 +7,7 @@ public class Player : MonoBehaviour
         float inputY = Input.GetAxis("Vertical");
 
         Vector3 currentPosition = transform.position;
-
         Vector3 newPosition = new Vector3(currentPosition.x + inputX, currentPosition.y + inputY);
-
         transform.position = newPosition;
     }
 }

@@ -9,8 +9,8 @@ public class Cat : MonoBehaviour
     GameObject GameManager;
     Vector3 positionPlayer;
     Vector3 direction;
-    float speed = 5f;
     AudioSource audioSource;
+    float speed = 5f;
   
     void Start()
     {

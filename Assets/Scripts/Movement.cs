@@ -5,7 +5,6 @@ public class Movement : MonoBehaviour
     float moveX;
     float moveY;
     float speed = 7f;
-
     void Update()
     {
         Vector3 pos = transform.position;

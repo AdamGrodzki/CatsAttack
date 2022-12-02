@@ -24,6 +24,5 @@ public class Shoot : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab);
         bullet.transform.position = gameObject.transform.position;
         audioS.Play();
-    }
- 
+    } 
 }
